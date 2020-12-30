@@ -1,0 +1,70 @@
+# Site settings
+
+title: "Michelangelo"
+subtitle: "Make images for social media"
+
+description: "An app to help make images for social media"
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://image-maker.johnpe.art"
+author: "John Peart"
+
+# Images and assets
+image-path: "/assets/images"
+css-path: "/assets/styles"
+js-path: "/assets/scripts"
+
+hero-images-path: "/assets/images/hero"
+social-images-path: "/assets/images/social"
+post-images-path: "/assets/images/posts"
+
+social-media-image: "/assets/images/site/social-media.png"
+
+theme-colour: "#007aff"
+
+favicon: "/favicon.ico"
+favicon-svg: "/assets/images/site/favicon.svg"
+favicon-pinned-svg: "/assets/images/site/favicon-pinned-svg.svg"
+favicon-large-png: "/assets/images/site/favicon-large-png.png"
+
+# Social settings
+facebook-app-id: "1053585037989505" # For Facebook OpenGraph integration
+facebook-profile-id: "100003820028435" # For Facebook OpenGraph integration
+facebook-url:	"https://facebook.com/john.robert.peart"
+facebook-handle: "john.robert.peart" # Automatically pre-pends http://facebook.com/
+
+twitter-url: "https://twitter.com/johnpeart" # Twitter handle i.e. joebloggs
+twitter-handle: "johnpeart" # Twitter handle i.e. joebloggs
+
+linkedin-url:  "https://www.linkedin.com/in/jrpeart"
+linkedin-handle:  "jrpeart"
+
+flickr-url:  "https://www.flickr.com/photos/johnpeart"
+flickr-handle:  "johnpeart"
+
+instagram-url:  "https://www.instagram.com/johnpeart"
+instagram-handle:  "johnpeart"
+
+github-url:  "https://github.com/johnpeart"
+github-handle:  "johnpeart"
+
+# Google settings
+google-site-verification: "DaqGCZ6cZIqm7q_nVSnOzjJmFFjbRfW2X7FDzpQDQZk"
+
+# Site header
+
+header: false
+
+# Plugins and build settings
+
+permalink: pretty
+markdown: kramdown
+future: false
+sass:
+    sass_dir: _sass
+
+remote_theme: johnpeart/jekyll-theme
+
+
+
+

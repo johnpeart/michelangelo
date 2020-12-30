@@ -1,0 +1,473 @@
+<div id="options--image-size">
+
+    <fieldset id="radios--image-size">
+
+        <legend>Image size</legend>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--image-size" id="image-size--twitter" value="twitter" checked>
+            <label for="image-size--twitter">
+                Twitter timeline
+            </label>
+            <span class="label-hint">1200px by 675px</span>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--image-size" id="image-size--facebook" value="facebook">
+            <label for="image-size--facebook">
+                Facebook timeline
+            </label>
+            <span class="label-hint">1200px by 630px</span>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--image-size" id="image-size--instagram-grid" value="instagram-grid">
+            <label for="image-size--instagram-grid">
+                Instagram Grid
+            </label>
+            <span class="label-hint">1080px by 1080px</span>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--image-size" id="image-size--instagram-stories" value="instagram-stories">
+            <label for="image-size--instagram-stories">
+                Instagram Stories
+            </label>
+            <span class="label-hint">1080px by 1920px</span>
+        </div>
+
+    </fieldset>
+
+</div>
+
+<div id="options--design">
+
+    <fieldset id="radios--image-design">
+
+        <legend>Design</legend>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--image-design" id="image-design--quote" value="quote" checked>
+            <label for="image-design--quote">Quote</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--image-design" id="image-design--venn" value="venn">
+            <label for="image-design--venn">Venn</label>
+        </div>
+
+    </fieldset>
+
+</div>
+
+<div id="options--venn--layout" class="hide">
+
+    <fieldset id="radios--venn-layout">
+
+        <legend>Venn layout</legend>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--venn-layout" id="venn-layout--two-sets--a-not-equal-b" value="a-not-equal-b" checked>
+            <label for="venn-layout--two-sets--a-not-equal-b">A ≠ B</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--venn-layout" id="venn-layout--two-sets--a-intersection-b" value="a-intersection-b">
+            <label for="venn-layout--two-sets--a-intersection-b">A ∩ B</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--venn-layout" id="venn-layout--two-sets--a-subset-b" value="a-subset-b">
+            <label for="venn-layout--two-sets--a-subset-b">A ⊆ B</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--venn-layout" id="venn-layout--three-sets--a-intersection-b-intersection-c" value="a-intersection-b-intersection-c">
+            <label for="venn-layout--three-sets--a-intersection-b-intersection-c">A ∩ B ∩ C</label>
+        </div>
+
+    </fieldset>
+
+</div>
+
+<div id="options--quote--text">
+
+    <fieldset id="options--quote--text-input">
+
+       <legend>Text</legend>
+
+        <div class="text-input">
+            <label for="quote--text--body">Body text</label>
+            <span class="label-hint">Your text will not automatically wrap to the image dimensons.<br>You can manually add a line break by inserting three asterisks in a row like this: <code>***</code></span>    
+            <textarea onfocusout="michelangelo();" id="quote--text--body" name="quote--text--body" placeholder="Enter your body text here." cols="30" rows="5"></textarea>
+        </div>
+        
+        <div class="text-input">
+            <label for="quote--text--footer">Footer text</label>
+            <input onfocusout="michelangelo();" id="quote--text--footer" name="quote--text--footer" type="text" placeholder="Enter your footer here.">
+        </div>
+
+    </fieldset>
+
+</div>
+
+<div id="options--venn--text" class="hide">
+
+    <fieldset id="options--venn--text-input--titles">
+
+       <legend>Text</legend>
+        
+       <div class="text-input">
+           <label for="venn--text--title">Title text</label>
+           <span class="label-hint">Your text will not automatically wrap to the image dimensons.<br>You can manually add a line break by inserting three asterisks in a row like this: <code>***</code></span>    
+           <textarea onfocusout="michelangelo();" id="venn--text--title" name="venn--text--title" placeholder="Enter your title here." cols="30" rows="2"></textarea>
+       </div>
+        
+       <div class="text-input">
+           <label for="venn--text--footer">Footer text</label>
+           <input onfocusout="michelangelo();" id="venn--text--footer" name="venn--text--footer" type="text" placeholder="Enter your footer here.">
+        </div>
+
+    </fieldset>
+
+    <fieldset id="options--venn--text-input--diagram-labels">
+        
+        <legend>Diagram labels</legend>
+        
+        <div id="options--venn--text--a" class="text-input">
+            <label class="hidden" for="venn--text--a">A</label>
+            <input onfocusout="michelangelo();" id="venn--text--a" name="venn--text--a" type="text" placeholder="Set A">
+        </div>
+         
+        <div id="options--venn--text--b" class="text-input">
+            <label class="hidden" for="venn--text--b">B</label>
+            <input onfocusout="michelangelo();" id="venn--text--b" name="venn--text--b" type="text" placeholder="Set B">
+        </div>
+         
+        <div id="options--venn--text--c" class="text-input">
+            <label class="hidden" for="venn--text--c">C</label>
+            <input onfocusout="michelangelo();" id="venn--text--c" name="venn--text--c" type="text" placeholder="Set C">
+        </div>
+         
+        <div id="options--venn--text--a-n-b" class="text-input">
+            <label class="hidden" for="venn--text--a-n-b">A ∩ B</label>
+            <input onfocusout="michelangelo();" id="venn--text--a-n-b" name="venn--text--a-n-b" type="text" placeholder="A ∩ B">
+        </div>
+        
+       <div id="options--venn--text--a-n-c" class="text-input">
+           <label class="hidden" for="venn--text--a-n-c">A ∩ C</label>
+           <input onfocusout="michelangelo();" id="venn--text--a-n-c" name="venn--text--a-n-c" type="text" placeholder="A ∩ C">
+       </div>
+         
+        <div id="options--venn--text--b-n-c" class="text-input">
+            <label class="hidden" for="venn--text--b-n-c">B ∩ C</label>
+            <input onfocusout="michelangelo();" id="venn--text--b-n-c" name="venn--text--b-n-c" type="text" placeholder="B ∩ C">
+        </div>
+         
+        <div id="options--venn--text--a-n-b-n-c" class="text-input">
+            <label class="hidden" for="venn--text--a-n-b-n-c">A ∩ B ∩ C</label>
+            <input onfocusout="michelangelo();" id="venn--text--a-n-b-n-c" name="venn--text--a-n-b-n-c" type="text" placeholder="A ∩ B ∩ C">
+        </div>
+         
+    </fieldset>
+
+</div>
+
+<div id="options--background">
+
+    <fieldset id="radios--background">
+
+        <legend>Background styles</legend>
+
+        <span class="sub-legend">Pride flags</span>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--white'); showSection('options--background-direction'); michelangelo();" name="radio--background" id="background--gilbert-pride" value="gilbert-pride">
+            <label for="background--gilbert-pride">Original LGBT Pride</label>
+            <span class="label-hint">6 stripe pride flag as designed by Gilbert Baker</span>    
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--white'); showSection('options--background-direction'); michelangelo();" name="radio--background" id="background--modern-gilbert-pride" value="modern-gilbert-pride">
+            <label for="background--modern-gilbert-pride">Modern LGBT Pride</label>
+            <span class="label-hint">Modern 8 stripe Pride flag adapted from original Gilbert Baker design</span>    
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--white'); showSection('options--background-direction'); michelangelo();" name="radio--background" id="background--bi-pride" value="bi-pride">
+            <label for="background--bi-pride">Bisexual Pride</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--black');showSection('options--background-direction'); michelangelo();" name="radio--background" id="background--pan-pride" value="pan-pride">
+            <label for="background--pan-pride">Pansexual Pride</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--black'); showSection('options--background-direction'); michelangelo();" name="radio--background" id="background--trans-pride" value="trans-pride">
+            <label for="background--trans-pride">Trans Pride</label>
+        </div>
+
+        <span class="sub-legend">Gradients</span>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--white');showSection('options--background-direction'); michelangelo();" name="radio--background" id="background--rainbow" value="rainbow">
+            <label for="background--rainbow">Rainbow</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--white');showSection('options--background-direction'); michelangelo();" name="radio--background" id="background--red-yellow" value="red-yellow">
+            <label for="background--red-yellow">Red to yellow</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--white');showSection('options--background-direction'); michelangelo();" name="radio--background" id="background--red-blue" value="red-blue">
+            <label for="background--red-blue">Red to blue</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--white');showSection('options--background-direction'); michelangelo();" name="radio--background" id="background--red-purple" value="red-purple">
+            <label for="background--red-purple">Red to purple</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--white');showSection('options--background-direction'); michelangelo();" name="radio--background" id="background--yellow-magenta" value="yellow-magenta">
+            <label for="background--yellow-magenta">Yellow to magenta</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--white');showSection('options--background-direction'); michelangelo();" name="radio--background" id="background--yellow-blue" value="yellow-blue">
+            <label for="background--yellow-blue">Yellow to blue</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--white');showSection('options--background-direction'); michelangelo();" name="radio--background" id="background--green-blue" value="green-blue">
+            <label for="background--green-blue">Green to blue</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--white');showSection('options--background-direction'); michelangelo();" name="radio--background" id="background--green-purple" value="green-purple">
+            <label for="background--green-purple">Green to purple</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--white');showSection('options--background-direction'); michelangelo();" name="radio--background" id="background--magenta-orange" value="magenta-orange">
+            <label for="background--magenta-orange">Magenta to orange</label>
+        </div>
+
+        <span class="sub-legend">Solid colours</span>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--white');hideSection('options--background-direction'); michelangelo();" name="radio--background" id="background--cyan" value="cyan" checked>
+            <label for="background--cyan">Cyan</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--white');hideSection('options--background-direction'); michelangelo();" name="radio--background" id="background--blue" value="blue">
+            <label for="background--blue">Blue</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--white');hideSection('options--background-direction'); michelangelo();" name="radio--background" id="background--purple" value="purple">
+            <label for="background--purple">Purple</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--white');hideSection('options--background-direction'); michelangelo();" name="radio--background" id="background--magenta" value="magenta">
+            <label for="background--magenta">Magenta</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--black');hideSection('options--background-direction'); michelangelo();" name="radio--background" id="background--yellow" value="yellow">
+            <label for="background--yellow">Yellow</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--white');hideSection('options--background-direction'); michelangelo();" name="radio--background" id="background--red" value="red">
+            <label for="background--red">Red</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--black'); hideSection('options--background-direction'); michelangelo();" name="radio--background" id="background--green" value="green">
+            <label for="background--green">Green</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--white');hideSection('options--background-direction'); michelangelo();" name="radio--background" id="background--orange" value="orange">
+            <label for="background--orange">Orange</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--black');hideSection('options--background-direction'); michelangelo();" name="radio--background" id="background--white" value="white">
+            <label for="background--white">White</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="switchToCustomRadio('text-color--white');hideSection('options--background-direction'); michelangelo();" name="radio--background" id="background--black" value="black">
+            <label for="background--black">Black</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="hideSection('options--background-direction'); michelangelo();" name="radio--background" id="background--custom--radio" value="custom">
+            <label for="background--custom--radio">Custom background colour</label>
+            <span class="label-hint">6 character hex colour values only.</span>    
+            <span class="label-hint">Do not include the leading hash.</span>    
+            <input onfocusin="switchToCustomRadio('background--custom--radio'); hideSection('options--background-direction');" onfocusout="michelangelo();" id="background--custom--input" name="input--background" type="text" pattern="[a-fA-F0-9]{6}" minlength="6" maxlength="6" placeholder="Example: 1A2B3C">
+        </div>
+
+    </fieldset>
+
+</div>
+
+<div id="options--background-direction" class="hide">
+
+    <fieldset id="radios--background-direction">
+
+        <legend>Background direction</legend>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--background-direction" id="background--direction-vertical" value="vertical" checked>
+            <label for="background--direction-vertical">Vertical</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--background-direction" id="background--direction-horizontal" value="horizontal">
+            <label for="background--direction-horizontal">Horizontal</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--background-direction" id="background--direction-diagonal" value="diagonal">
+            <label for="background--direction-diagonal">Diagonal</label>
+        </div>
+
+    </fieldset>
+
+</div>
+
+<div id="options--text-color">
+
+    <fieldset id="radios--text-color">
+
+        <legend>Text colour</legend>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--text-color" id="text-color--white" value="white" checked>
+            <label for="text-color--white">White</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--text-color" id="text-color--black" value="black">
+            <label for="text-color--black">Black</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--text-color" id="text-color--custom--radio" value="custom">
+            <label for="text-color--custom--radio">Custom colour</label>
+            <span class="label-hint">6 character hex colour values only.</span>    
+            <span class="label-hint">Do not include the leading hash.</span>    
+            <input onfocusin="switchToCustomRadio('text-color--custom--radio');" onfocusout="michelangelo();" id="text-color--custom--input" name="input--text-color" type="text" pattern="[a-fA-F0-9]{6}" minlength="6" maxlength="6" placeholder="Example: 1A2B3C">
+        </div>
+
+    </fieldset>
+
+</div>
+
+<div id="options--typeface">
+
+    <fieldset id="radios--typeface">
+
+        <legend>Typeface</legend>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--typeface" id="typeface--system-default" value="system-default" checked>
+            <label for="typeface--system-default">System sans serif</label>
+            <span class="label-hint">Use your operating system sans serif font.</span>    
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--typeface" id="typeface--serif" value="serif">
+            <label for="typeface--serif">System serif</label>
+            <span class="label-hint">Use your operating system serif font.</span>    
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--typeface" id="typeface--mono" value="mono">
+            <label for="typeface--mono">System monospace</label>
+            <span class="label-hint">Use your operating system monospace font.</span>    
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--typeface" id="typeface--sans-serif" value="sans-serif">
+            <label for="typeface--sans-serif">Helvetica Neue</label>
+            <span class="label-hint">Falls back to Helvetica or Arial if Helvetica Neue is not installed.</span>    
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--typeface" id="typeface--custom--radio" value="custom">
+            <label for="typeface--custom--radio">Custom typeface</label>
+            <span class="label-hint">Enter a sytem font name.</span>
+            <span class="label-hint">Valid characters: <br><code>A</code> to <code>Z</code>, <code>0</code> to <code>9</code>, <code>"</code>, <code>'</code>, <code>_</code> and <code>-</code></span>
+            <input onfocusin="switchToCustomRadio('typeface--custom--radio');" onfocusout="michelangelo();" id="typeface--custom--input" name="input--typeface" type="text" pattern="[a-zA-Z0-9_-\s]+" spellcheck="false" placeholder="Example: Times New Roman">
+        </div>
+
+    </fieldset>
+
+</div>
+
+<div id="options--text-weight">
+
+    <fieldset id="radios--text-weight">
+
+        <legend>Text weight</legend>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--text-weight" id="text-weight--light" value="lighter">
+            <label for="text-weight--light">Light</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--text-weight" id="text-weight--normal" value="normal" checked>
+            <label for="text-weight--normal">Normal</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--text-weight" id="text-weight--bold" value="bold">
+            <label for="text-weight--bold">Bold</label>
+        </div>
+
+    </fieldset>
+
+</div>
+
+<div id="options--text-size">
+
+    <fieldset id="radios--text-size">
+
+        <legend>Text size</legend>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--text-size" id="text-size--small" value="small">
+            <label for="text-size--small">Small</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--text-size" id="text-size--medium" value="medium" checked>
+            <label for="text-size--medium">Medium</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--text-size" id="text-size--large" value="large">
+            <label for="text-size--large">Large</label>
+        </div>
+
+        <div class="radio-input">
+            <input type="radio" onchange="michelangelo();" name="radio--text-size" id="text-size--custom--radio" value="custom">
+            <label for="text-size--custom--radio">Custom text size</label>
+            <span class="label-hint">Font size is in pixels.</span>    
+            <input onfocusin="switchToCustomRadio('text-size--custom--radio');" onfocusout="michelangelo();" id="text-size--custom--input" name="input--text-size" type="text" pattern="[0-9]*" inputmode="numeric" spellcheck="false" placeholder="Example: 50">
+        </div>
+
+    </fieldset>
+
+</div>
+

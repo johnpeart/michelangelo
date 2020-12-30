@@ -1,0 +1,24 @@
+// Overrides and project specific styles
+
+// FORM ELEMENTS
+
+$touch-target-size:                 44px;
+
+$input-size:                       40px;
+$border-width-form-element:         3px;
+$border-focus-width:                1px;
+$input-border-color:                $black;
+$input-error-color:                 $red;
+$input-focus-color:                 $cyan;
+$input-padding:                     5px;
+
+$radios-size:                       40px;
+$radios-label-padding-left-right:   20px;
+
+// BREAKPOINT VALUES
+
+$container-xs: 	 					300px;
+$container-sm: 	 					560px;
+$container-md: 	 					700px;
+$container-lg: 	 					900px;
+$container-xl: 	 					1150px;
