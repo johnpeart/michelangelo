@@ -1,1 +1,1 @@
-Sitemap: https://imagemaker.johnpe.art/sitemap.xml
+Sitemap: https://www.johnpe.art/imagemaker/sitemap.xml
