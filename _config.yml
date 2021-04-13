@@ -1,69 +1,64 @@
-# Site settings
-
+######################
+# Site configuration #
+######################
 title: "Michelangelo"
 subtitle: "Make images for social media"
-
 description: "An app to help make images for social media"
+author: "John Peart"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://imagemaker.johnpe.art"
-author: "John Peart"
 
-# Images and assets
+####################
+# Feature settings #
+####################
+menu-subdomain: true
+menu-header: true
+menu-footer: true
+analytics: false
+
+###############
+# Asset paths #
+###############
 image-path: "/assets/images"
 css-path: "/assets/styles"
 js-path: "/assets/scripts"
-
-hero-images-path: "/assets/images/hero"
-social-images-path: "/assets/images/social"
-post-images-path: "/assets/images/posts"
-
 social-media-image: "/assets/images/site/social-media.png"
-
-theme-colour: "#009fe3"
-
 favicon: "/favicon.ico"
 favicon-svg: "/assets/images/site/favicon.svg"
 favicon-pinned-svg: "/assets/images/site/favicon-pinned-svg.svg"
 favicon-large-png: "/assets/images/site/favicon-large-png.png"
+theme-colour: "#009fe3"
 
-# Social settings
-facebook-app-id: "1053585037989505" # For Facebook OpenGraph integration
-facebook-profile-id: "100003820028435" # For Facebook OpenGraph integration
-facebook-url:	"https://facebook.com/john.robert.peart"
-facebook-handle: "john.robert.peart" # Automatically pre-pends http://facebook.com/
-
+#######################
+# <link rel="me" ...> #
+#######################
+# Twitter
 twitter-url: "https://twitter.com/johnpeart" # Twitter handle i.e. joebloggs
 twitter-handle: "johnpeart" # Twitter handle i.e. joebloggs
-
-linkedin-url:  "https://www.linkedin.com/in/jrpeart"
-linkedin-handle:  "jrpeart"
-
-flickr-url:  "https://www.flickr.com/photos/johnpeart"
-flickr-handle:  "johnpeart"
-
-instagram-url:  "https://www.instagram.com/johnpeart"
-instagram-handle:  "johnpeart"
-
+# Mastodon
+mastodon-url: "https://mastodon.social/@johnpeart"
+mastodon-handle: "johnpeart@mastodon.social"
+# Github
 github-url:  "https://github.com/johnpeart"
 github-handle:  "johnpeart"
 
-# Google settings
-google-site-verification: "DaqGCZ6cZIqm7q_nVSnOzjJmFFjbRfW2X7FDzpQDQZk"
-
-# Site header
-
-header: false
-
-# Plugins and build settings
-
+##################
+# Build settings #
+##################
+remote_theme: johnpeart/theme
 permalink: pretty
 markdown: kramdown
 future: false
+highlighter: rouge
 sass:
-    sass_dir: _sass
+  sass_dir: _sass
 
-remote_theme: johnpeart/jekyll-theme
+plugins:
+- jekyll-remote-theme
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-redirect-from
 
 
 

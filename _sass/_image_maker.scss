@@ -117,11 +117,11 @@ body#image-maker main {
 				div#output-preview--buttons {
 					padding: 10px; 
 					margin-bottom: 10px;
-					background:     $true-white;
+					background:     $absolute-white;
 					box-shadow: 	0 1px 3px rgba(0,0,0,0.12), 
 									0 1px 2px rgba(0,0,0,0.24);   
 					@include dark-mode {
-						background: $true-black;
+						background: $absolute-black;
 						box-shadow: 	0 1px 10px rgba(0,0,0,0.12), 
 										0 1px 5px rgba(0,0,0,0.24);  
 					}

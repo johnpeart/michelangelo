@@ -120,12 +120,12 @@ main {
         border: $border-width-form-element solid $input-border-color;
         border-radius: 0;
 
-        background: $true-white;
+        background: $absolute-white;
         color:      $black;
         @include dark-mode {
             background: $gray-900;
             color:      $white;
-            border-color: $true-black;
+            border-color: $absolute-black;
         }
 
         // Disable inner shadow and remove rounded corners
@@ -138,8 +138,8 @@ main {
             box-shadow: inset 0 0 0 $border-focus-width;
             @include dark-mode {
                 background: $gray-900;
-                border-color: $true-black;
-            box-shadow: inset 0 0 0 $border-focus-width $true-black;
+                border-color: $absolute-black;
+            box-shadow: inset 0 0 0 $border-focus-width $absolute-black;
             }
         }
 
