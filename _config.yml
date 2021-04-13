@@ -6,8 +6,8 @@ subtitle: "Make images for social media"
 description: "An app to help make images for social media"
 author: "John Peart"
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://imagemaker.johnpe.art"
+baseurl: "imagemaker" # the subpath of your site, e.g. /blog
+url: "https://www.johnpe.art"
 
 ####################
 # Feature settings #
